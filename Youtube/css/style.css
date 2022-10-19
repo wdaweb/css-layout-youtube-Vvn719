@@ -1,0 +1,597 @@
+  /* opacity: 1; 透明度*/
+
+
+  #main {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    font-family: "微軟正黑體";
+
+  }
+
+  #header {
+    width: 100vw;
+    height: 56px;
+    line-height: 56px;
+    background-color: white;
+    padding: 0 16px;
+    float: inline-start;
+  }
+
+  #header a {
+    text-decoration: none;
+  }
+
+  .menubtn {
+    position: absolute;
+    display: inline;
+    width: 56px;
+    height: 56px;
+  }
+
+  .ri-menu-line {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    padding: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.0);
+    color: #000;
+  }
+
+  .menubtn i:active {
+    background-color: #e9e9e9;
+    border: 0.1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  .logo img {
+    position: absolute;
+    top: 16px;
+    left: 70px;
+    height: 24px;
+  }
+
+  .logo sup {
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+    color: #606060;
+    font-size: 1px;
+  }
+
+  .searchbtn {
+    position: absolute;
+    left: 30%;
+    display: inline-block;
+    width: 40%;
+    height: 56px;
+    /* background-color: aqua; */
+  }
+
+  .searchbtn input {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    width: 60%;
+    height: 40px;
+    padding: 0px;
+    background: #fff;
+    outline: none;
+    border: 1px solid #d3d3d3;
+    font-size: 1rem;
+    border-radius: 2px;
+    z-index: 1;
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.05) inset
+  }
+
+  .ri-search-line {
+    position: relative;
+    top: 0px;
+    left: 60%;
+    width: 56px;
+    height: 38px;
+    background-color: #f8f8f8;
+    padding: 8px 18px 8px 18px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    box-sizing: content-box;
+    font-size: 24px;
+    color: #000;
+  }
+
+  .ri-search-line:hover {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2)
+  }
+
+  .ri-mic-fill {
+    position: relative;
+    left: 62%;
+    width: 56px;
+    height: 40px;
+    background-color: #f8f8f8;
+    border: 0.1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    font-size: 24px;
+    color: #000;
+  }
+
+  .ri-mic-fill:active {
+    background-color: #e9e9e9;
+    border: 0.1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  input:focus {
+    border: 1px solid #065fd4;
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.2) inset
+  }
+
+
+
+  .loginbtn {
+    position: absolute;
+    right: 0%;
+    display: inline-block;
+    width: 150px;
+    height: 56px;
+    /* background-color: fuchsia; */
+  }
+
+  .loginbutton {
+    border: 0.1px solid #065fd4;
+    position: absolute;
+    right: 15%;
+    top: 8px;
+    height: 40px;
+    width: 100px;
+    border-radius: 3px;
+    background: white;
+  }
+
+  .ri-account-circle-line {
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    display: inline;
+    line-height: 40px;
+    font-size: 30px;
+    color: #065fd4;
+  }
+
+  .loginbutton p {
+    position: absolute;
+    left: 45%;
+    top: 0%;
+    display: inline;
+    border-radius: 2px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #065fd4;
+  }
+
+  .loginbutton:active {
+    background-color: #e9e9e9;
+  }
+
+  .setting {
+    position: absolute;
+    right: 140px;
+    display: inline-block;
+    width: 45px;
+    height: 56px;
+    /* background-color: darkmagenta; */
+  }
+
+  .ri-more-2-line {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    padding: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.0);
+    color: #000;
+  }
+
+  .ri-more-2-line:active {
+    background-color: #e9e9e9;
+    border: 0.1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  #sidebar {
+    position: absolute;
+    width: 15%;
+    height: calc(100vh - 56px);
+    float: left;
+    /* background-color: grey; */
+    overflow-y: scroll;
+  }
+
+
+  #sidebar::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+  }
+
+
+  #sidebar::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 50px;
+  }
+
+  #sidebar:hover::-webkit-scrollbar-thumb {
+    background-color: #717171;
+    border-radius: 50px;
+  }
+
+
+
+  hr {
+    border: 1px solid #e9e9e9;
+    margin: 0%;
+  }
+
+  .sidebarcontent {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    box-sizing: content-box;
+    /* background-color: wheat; */
+  }
+
+
+  .sidebar-ul-li ul {
+    box-sizing: border-box;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 12px 0px;
+  }
+
+  .sidebar-ul-li a {
+    position: absolute;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .sidebar-ul-li a:hover {
+    position: absolute;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #e9e9e9;
+    color: #000;
+  }
+
+  .sidebar-ul-li a:active {
+    background-color: #ccc;
+  }
+
+
+  .sidebar-ul-li li {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    /* 輸入空白不換行 */
+    white-space: nowrap;
+  }
+
+  .sidebar-ul-li i {
+    position: relative;
+    left: 20px;
+    box-sizing: border-box;
+    width: 20%;
+    font-size: 24px;
+    padding: 0px 20px 0px 0px;
+    color: #000;
+    line-height: 40px;
+    /* background-color: salmon; */
+  }
+
+  .sidebar-ul-li p {
+    position: absolute;
+    width: 120px;
+    left: 30%;
+    top: 0%;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+  }
+
+
+  .sidebar-login {
+    position: relative;
+    top: 0%;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 16px 32px 16px 32px;
+    font-size: 16px;
+    color: #606060;
+    /* background-color: antiquewhite; */
+  }
+
+  .sidebar-login a {
+    text-decoration: none;
+    color: #606060;
+  }
+
+  .loginbtn2 {
+    position: relative;
+    left: 0%;
+    top: 2%;
+    display: inline-block;
+    box-sizing: content-box;
+    width: 120px;
+    height: 56px;
+    /* background-color: fuchsia; */
+  }
+
+
+
+  #content {
+    position: absolute;
+    right: 0%;
+    width: 85%;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+
+
+  #nav {
+    position: fixed;
+    width: 85%;
+    height: 60px;
+    border-top: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+    text-align: center;
+    /* background-color: bisque; */
+    background-color: #f8f8f8;
+    z-index: 1;
+  }
+
+  #nav a {
+    position: relative;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    border: 0.1px solid #d3d3d3;
+    padding: 6px 12px;
+    border-radius: 50px;
+    color: #000;
+  }
+
+  #nav a:hover {
+    background-color: #ccc;
+    border: 0.1px solid #d3d3d3;
+  }
+
+  #nav a:active {
+    background-color: #000;
+    border: 0.1px solid #000;
+    color: #fff;
+  }
+
+  #row {
+    position: relative;
+    left: 0%;
+    top: 60px;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 30px;
+    /* background: #065fd4; */
+    overflow-y: scroll;
+  }
+
+  #row::-webkit-scrollbar {
+    width: 10px;
+    /* background-color: #717171; */
+    border-radius: 50px;
+  }
+
+  #row::-webkit-scrollbar-thumb {
+    background-color: #717171;
+    border-radius: 50px;
+  }
+
+
+
+  #col {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    display: inline;
+    width: 25%;
+    font-size: 0px;
+    /* background-color: rosybrown; */
+
+  }
+
+  #col .card {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    width: 25%;
+
+    display: inline-block;
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+    font-size: 1rem;
+    background: #f9f9f9;
+    padding: 10px 10px 10px 10px;
+  }
+
+  #col .card img {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+
+  #col hr {
+    position: relative;
+    border: 2px solid #f9f9f9;
+  }
+
+  #col .card-body-left {
+    width: 48px;
+    height: 54px;
+  }
+
+  #col .card-body-left img {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 100px;
+    margin: 12px 12px 0 0;
+  }
+
+  #col .card-body-right {
+    position: relative;
+    right: 0%;
+    float: right;
+    height: 36px;
+    width: calc(100% - 48px);
+  }
+
+  #col .card-body-right p {
+    position: relative;
+    width: 270px;
+    height: 46px;
+    padding: 14px 0 0 0;
+    font-weight: bolder;
+
+    box-sizing: border-box;
+
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  #col .card-footer {
+    position: relative;
+    width: calc(320px - 48px);
+    color: #909090;
+    font-size: 12px;
+    margin: 0px 0 0px 36px;
+    /* background-color: #065fd4; */
+
+  }
+
+  /* 動畫 */
+
+  #col .card:hover {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: auto;
+    transform: scale(1.1);
+    transition: 0s;
+    transition-duration: 1s;
+    /* transition-delay: 1s; */
+    z-index: 1;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-hv {
+    position: relative;
+    /* display: none; */
+    left: 0%;
+    width: 100%;
+    /* background-color: violet; */
+    height: 42px;
+    padding: 0%;
+  }
+
+  .button {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: calc(50% - 10px);
+    line-height: 28px;
+    border-radius: 0%;
+    border: none;
+    color: #606060;
+  }
+
+
+  .card:hover .button {
+    display: block;
+    cursor: pointer;
+
+  }
+
+
+  .card .button:active {
+    display: block;
+    background-color: #909090;
+  }
+
+
+  .button2 {
+    display: none;
+
+    /* display: block; */
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: calc(50% - 10px);
+    line-height: 28px;
+    border-radius: 0%;
+    border: none;
+    color: #606060;
+  }
+
+  .card:hover .button2 {
+    display: block;
+    cursor: pointer;
+  }
+
+  .card .button2 {
+    display: none;
+    cursor: pointer;
+  }
+
+  .card .button2:active {
+    display: block;
+    background-color: #909090;
+  }
+
+
+  .button3 {
+    display: none;
+    position: absolute;
+    top: 235px;
+    right: 10px;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .card:hover .button3 {
+    display: block;
+  }
+
+  .button3:active {
+    display: block;
+    background-color: #e9e9e9;
+    border: 0px solid #ccc;
+    border-radius: 50px;
+  }
